@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          uri: https://github.com/cyberalexander/eagle-eye/tree/master/configuration
+          searchPaths: licensing-service,organisation-service
+          username: native-cloud-apps
+          password: 0ffended!
