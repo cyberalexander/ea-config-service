@@ -42,7 +42,7 @@
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <start-class>ccom.eagle.eye.config.EaConfigServiceApplication</start-class>
+        <start-class>com.eagle.eye.config.EaConfigServiceApplication</start-class>
         <docker.image.name>cyberalexander/ea-config-service</docker.image.name>
         <docker.image.tag>november22</docker.image.tag>
     </properties>
@@ -114,7 +114,15 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.10</version>
+                <version>1.2.2</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <imageName>${docker.image.name}:${docker.image.tag}</imageName>
                     <dockerDirectory>${basedir}/target/dockerfile</dockerDirectory>

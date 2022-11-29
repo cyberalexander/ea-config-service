@@ -1,0 +1,9 @@
+version: '2'
+services:
+  configservice:
+    image: cyberalexander/ea-config-service:november22
+    ports:
+      - "8888:8888"
+    environment:
+      ENCRYPT_KEY: "IMSYMMETRIC"
+
