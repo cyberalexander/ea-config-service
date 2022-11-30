@@ -125,7 +125,7 @@
                 </executions>
                 <configuration>
                     <imageName>${docker.image.name}:${docker.image.tag}</imageName>
-                    <dockerDirectory>${basedir}/target/dockerfile</dockerDirectory>
+                    <dockerDirectory>${basedir}/src/main/docker</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>

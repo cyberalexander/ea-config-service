@@ -21,8 +21,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-#!/bin/sh
 echo "********************************************************"
 echo "Starting Configuration Server"
 echo "********************************************************"
-java -jar /usr/local/configserver/@project.build.finalName@.jar
+java -jar /usr/local/ea-config-service/@project.build.finalName@.jar
