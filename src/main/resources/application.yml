@@ -1,3 +1,4 @@
+# Configuration service that uses a git-based repository to read the files
 server:
   port: 8888
 spring:
@@ -7,7 +8,23 @@ spring:
         encrypt:
           enabled: false
         git:
-          uri: https://github.com/cyberalexander/eagle-eye/tree/master/configuration
-          searchPaths: licensing-service,organisation-service
-          username: native-cloud-apps
-          password: 0ffended!
+          uri: https://github.com/cyberalexander/eagle-eye.git
+          searchPaths: ea-licensing-service,ea-organisation-service
+          default-label: master
+
+
+####
+# Classpath and file-based solution
+####
+#server:
+#   port: 8888
+#spring:
+#  profiles:
+#    active: native
+#  cloud:
+#     config:
+#       server:
+#           native:
+#              searchLocations: file://<chapter 3>/confsvr/src/main/resources/config/licensingservice,
+#                               file://<chapter 3>confsvr/src/main/resources/config/organizationservice
+##              #searchLocations: classpath:config/,classpath:config/licensingservice
