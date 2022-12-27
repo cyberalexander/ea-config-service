@@ -34,7 +34,7 @@
 
     <groupId>com.eagle.eye</groupId>
     <artifactId>ea-config-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>Eagle Eye Configuration Service</name>
     <description>Configuration Service</description>
 
@@ -45,6 +45,8 @@
         <start-class>com.eagle.eye.config.EaConfigServiceApplication</start-class>
         <docker.image.name>cyberalexander/ea-config-service</docker.image.name>
         <docker.image.tag>november22</docker.image.tag>
+
+        <spring-cloud.version>2021.0.3</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -52,7 +54,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>2021.0.3</version>
+                <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -86,10 +88,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.0.0</version>
             </plugin>
 
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
