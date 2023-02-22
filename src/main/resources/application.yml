@@ -4,8 +4,6 @@ server:
 spring:
   cloud:
     config:
-      discovery:
-        enabled: true # Flag to indicate that config server discovery is enabled (config server URL  will be looked up via discovery).
       server:
         encrypt:
           enabled: false
@@ -13,6 +11,9 @@ spring:
           uri: https://github.com/cyberalexander/eagle-eye.git
           searchPaths: ea-licensing-service,ea-organisation-service
           default-label: master
+
+encrypt:
+  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH
 
 
 ####
