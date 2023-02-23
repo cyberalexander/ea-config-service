@@ -1,0 +1,34 @@
+# The Document contains API examples exposed by EA Configuration Service
+### 1. Retrieve 'default' config of Organisation Service
+GET http://localhost:8888/ea-organisation-service/default
+
+### 2. Retrieve 'dev' config of Organisation Service
+GET http://localhost:8888/ea-organisation-service/dev
+
+### 3. Retrieve 'prod' config of Organisation Service
+GET http://localhost:8888/ea-organisation-service/prod
+
+### 4. Retrieve 'default' config of Licensing Service
+GET http://localhost:8888/ea-licensing-service/default
+
+### 5. Retrieve 'dev' config of Licensing Service
+GET http://localhost:8888/ea-licensing-service/dev
+
+### 6. Retrieve 'prod' config of Licensing Service
+GET http://localhost:8888/ea-licensing-service/prod
+
+### 7.Encrypt sensitive data
+POST http://localhost:8888/encrypt
+Content-Type: text/plain
+
+mypassword
+
+### 8. Decrypt sensitive data
+POST http://localhost:8888/decrypt
+Content-Type: text/plain
+
+45fb948f187501779b7ac6bcd4fc8902b57b935eb5a60e4988e952be264b5d79
+
+### 9. Refresh Configuration Service after configurations storage updated
+POST http://localhost:8888/actuator/refresh
+Content-Type: application/json

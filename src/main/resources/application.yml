@@ -13,7 +13,12 @@ spring:
           default-label: master
 
 encrypt:
-  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH
+  key: APODNU3093r2rbjzxcn09u213asdhy08WRFH # the key is used by config server to encrypt/decrypt sensitive data
+
+management:
+  endpoints:
+    web.exposure:
+      include: refresh
 
 
 ####
