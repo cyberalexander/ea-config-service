@@ -34,7 +34,7 @@
 
     <groupId>com.eagle.eye</groupId>
     <artifactId>ea-config-service</artifactId>
-    <version>2023.02.22-SNAPSHOT</version>
+    <version>2023.03.08-SNAPSHOT</version>
     <name>Eagle Eye Configuration Service</name>
     <description>Configuration Service</description>
 
@@ -64,23 +64,19 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
@@ -95,7 +91,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>3.0.3</version>
             </plugin>
 
             <plugin>

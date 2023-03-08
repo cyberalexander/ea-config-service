@@ -21,13 +21,13 @@ GET http://localhost:8888/ea-licensing-service/prod
 POST http://localhost:8888/encrypt
 Content-Type: text/plain
 
-mypassword
+any_unencrypted_password
 
 ### 8. Decrypt sensitive data
 POST http://localhost:8888/decrypt
 Content-Type: text/plain
 
-45fb948f187501779b7ac6bcd4fc8902b57b935eb5a60e4988e952be264b5d79
+any_encrypted_password
 
 ### 9. Refresh Configuration Service after configurations storage updated
 POST http://localhost:8888/actuator/refresh
