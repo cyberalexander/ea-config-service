@@ -1,4 +1,4 @@
-ea.organisation.service.organisation.ssn: "DEV-SSN-4528914"
+ea.organisation.service.organisation-ssn: "DEV-SSN-4528914"
 spring.jpa.show-sql: "true"
 spring.jpa.database: "postgresql"
 spring.jpa.generate-ddl: "true"
