@@ -1,14 +1,16 @@
-# Configuration service that uses a git-based repository to read the files
 server:
   port: 8888
+
 spring:
+  application:
+    name: ea-config-service
   cloud:
     config:
       server:
         encrypt:
           enabled: false
         git:
-          uri: https://github.com/cyberalexander/eagle-eye.git
+          uri: https://github.com/cyberalexander/eagle-eye.git # Configuration service that uses a git-based repository to read the files
           searchPaths: ea-licensing-service,ea-organisation-service
           default-label: master
 
